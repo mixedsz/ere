@@ -1,0 +1,114 @@
+:root {
+    /* Blue to Pink gradient theme */
+    --primary-blue: #00d4ff;
+    --primary-pink: #ff00ff;
+    --accent-purple: #b300ff;
+    --dark-bg: rgba(0, 0, 0, 0.95);
+    --light-bg: rgba(20, 20, 30, 0.9);
+}
+
+.box {
+    box-sizing: border-box;
+    position: absolute;
+    width: 937px;
+    height: 585px;
+    background: var(--dark-bg);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 15px;
+    top: 20%;
+    right: 25%;
+    z-index: 1;
+}
+
+.cs-header-container .cs-header-logo {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.3) 0%, rgba(255, 0, 255, 0.3) 100%);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.cs-category-wrapper {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.15) 0%, rgba(255, 0, 255, 0.15) 100%);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.cs-category-wrapper .cs-category-container {
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cs-category-wrapper .cs-category-container:hover {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.3) 0%, rgba(255, 0, 255, 0.3) 100%);
+    border: 1px solid rgba(0, 212, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.cs-coins-wrapper .cs-player-details {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(255, 0, 255, 0.2) 100%);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.close {
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.close:hover {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.3) 0%, rgba(255, 0, 255, 0.3) 100%);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.cs-items-wrapper .cs-items-container {
+    background: rgba(0, 212, 255, 0.05);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cs-items-wrapper .cs-items-container:hover {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.15) 0%, rgba(255, 0, 255, 0.15) 100%);
+    border: 1px solid rgba(0, 212, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+}
+
+.cs-items-purchase-container {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.3) 0%, rgba(255, 0, 255, 0.3) 100%) !important;
+    border: 1px solid rgba(0, 212, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cs-items-purchase-container:hover {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.5) 0%, rgba(255, 0, 255, 0.5) 100%) !important;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+}
+
+.cs-items-image {
+    background: rgba(0, 212, 255, 0.05);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+/* Shine effect with blue/pink gradient */
+@keyframes shine {
+    0% {
+        background-position: -200%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+.shine {
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--primary-blue) 45%, 
+        var(--primary-pink) 55%, 
+        transparent 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+}

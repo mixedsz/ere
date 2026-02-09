@@ -1,14 +1,10 @@
 Configuration = {
-    Framework = 'ESX', ---@type "ESX" | "QB" | "Standalone"
+    Framework = 'ESX',
     Debug = true,
     Users = 'users',
-
     RedeemCooldown = 10,
+    InventoryImagePath = 'nui://ox_inventory/web/images/',
 
-    -- Inventory image path
-    InventoryImagePath = 'nui://ox_inventory/web/images/', -- Path to your inventory images
-
-    ---@param message string
     notify = function(message)
         lib.notify({
             title = 'Coin System',
@@ -23,7 +19,7 @@ Configuration = {
                 }
             },
             icon = 'coins',
-            iconColor = '#00d4ff' -- Changed to blue
+            iconColor = '#00d4ff'
         })
     end,
 
@@ -41,16 +37,15 @@ Configuration = {
     },
 
     Customization = {
-        -- New gradient theme using your logo colors
-        Theme = 'linear-gradient(135deg, #00d4ff 0%, #ff00ff 100%)', -- Blue to Pink gradient
-        PrimaryColor = '#00d4ff', -- Cyan/Blue
-        SecondaryColor = '#ff00ff', -- Pink/Magenta
-        AccentColor = '#b300ff', -- Purple (mix of blue and pink)
+        Theme = 'linear-gradient(135deg, #00d4ff 0%, #ff00ff 100%)',
+        PrimaryColor = '#00d4ff',
+        SecondaryColor = '#ff00ff',
+        AccentColor = '#b300ff',
         Discord = 'https://discord.gg/gcrz', 
         Store = 'https://store.gulfcoastrp.com',
-        Logo = 'nui://coinShop/web/assets/logo.png', -- Your uploaded logo
+        Logo = 'nui://coinShop/web/assets/logo.png',
         SoundEffects = {
-            Enabled = true,
+            Enabled = false, -- Disabled to avoid audio errors
             Volume = 0.05
         }
     },

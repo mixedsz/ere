@@ -100,3 +100,48 @@ CreateThread(init)
 exports('toggleShop', toggleShop)
 RegisterNUICallback('closeCS', toggleShop)
 RegisterNUICallback('csPurchase', purchaseItem)
+
+-- Add this to your coinShop/client/client.lua file
+-- This handles opening URLs when Discord/Store links are clicked
+
+-- URL Handler
+RegisterNUICallback('openUrl', function(data, cb)
+    if data.url then
+        -- Send the URL to the client to open in Steam overlay
+        SendNUIMessage({
+            action = 'openExternalUrl',
+            url = data.url
+        })
+        
+        -- Also try opening with native FiveM function
+        if type(data.url) == 'string' then
+            -- Open URL in Steam overlay browser
+            ExecuteCommand('browser ' .. data.url)
+        end
+    end
+    cb('ok')
+end)
+
+-- Alternative method - directly open in default browser (Windows only)
+-- Uncomment this if the above method doesn't work
+--[[
+RegisterNUICallback('openUrl', function(data, cb)
+    if data.url then
+        local url = data.url
+        -- Windows command to open URL in default browser
+        os.execute('start "" "' .. url .. '"')
+    end
+    cb('ok')
+end)
+]]--
+
+-- For Linux servers, use this instead:
+--[[
+RegisterNUICallback('openUrl', function(data, cb)
+    if data.url then
+        local url = data.url
+        os.execute('xdg-open "' .. url .. '"')
+    end
+    cb('ok')
+end)
+]]--

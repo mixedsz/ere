@@ -1,0 +1,205 @@
+/* Blue to Pink Gradient Theme - Refined */
+:root {
+    --primary-blue: #00d4ff;
+    --primary-pink: #ff00ff;
+    --accent-purple: #b300ff;
+    --glow-blue: rgba(0, 212, 255, 0.6);
+    --glow-pink: rgba(255, 0, 255, 0.6);
+}
+
+/* Main container */
+.box {
+    background: rgba(0, 0, 0, 0.95) !important;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.4), 0 0 60px rgba(255, 0, 255, 0.2) !important;
+    border: 2px solid rgba(0, 212, 255, 0.3) !important;
+}
+
+/* Header logo - More vibrant */
+.cs-header-logo {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.4) 0%, rgba(255, 0, 255, 0.4) 100%) !important;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.8), inset 0 0 20px rgba(255, 0, 255, 0.3) !important;
+    border: 1.5px solid rgba(0, 212, 255, 0.6) !important;
+}
+
+/* Coin Shop Title - Make it visible */
+.rubik-text.shine {
+    background: linear-gradient(90deg, 
+        #00d4ff 0%, 
+        #ff00ff 50%, 
+        #00d4ff 100%) !important;
+    background-size: 200% auto !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    animation: shine 3s linear infinite !important;
+    font-weight: 700 !important;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5) !important;
+}
+
+/* Category wrapper - Stronger gradient */
+.cs-category-wrapper {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.25) 0%, rgba(255, 0, 255, 0.25) 100%) !important;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.4), inset 0 0 30px rgba(0, 0, 0, 0.5) !important;
+    border: 1.5px solid rgba(0, 212, 255, 0.4) !important;
+}
+
+/* Category items - More vibrant */
+.cs-category-container {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.15) 0%, rgba(255, 0, 255, 0.15) 100%) !important;
+    border: 1px solid rgba(0, 212, 255, 0.4) !important;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.2) !important;
+}
+
+.cs-category-container:hover {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.4) 0%, rgba(255, 0, 255, 0.4) 100%) !important;
+    border: 1px solid rgba(0, 212, 255, 0.8) !important;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.8), 0 0 30px rgba(255, 0, 255, 0.4) !important;
+}
+
+/* Active/Selected category - Stronger highlight */
+.cs-category-container[style*="background"] {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.5) 0%, rgba(255, 0, 255, 0.5) 100%) !important;
+    border: 2px solid rgba(0, 212, 255, 0.9) !important;
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.9), 0 0 35px rgba(255, 0, 255, 0.5) !important;
+}
+
+/* Coins display */
+.cs-player-details {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.3) 0%, rgba(255, 0, 255, 0.3) 100%) !important;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5), inset 0 0 20px rgba(255, 0, 255, 0.2) !important;
+    border: 1.5px solid rgba(0, 212, 255, 0.6) !important;
+}
+
+/* Close button */
+.close {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.15) 0%, rgba(255, 0, 255, 0.15) 100%) !important;
+    border: 1px solid rgba(0, 212, 255, 0.4) !important;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3) !important;
+}
+
+.close:hover {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.4) 0%, rgba(255, 0, 255, 0.4) 100%) !important;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.8), 0 0 30px rgba(255, 0, 255, 0.4) !important;
+}
+
+/* Item containers - Enhanced glow */
+.cs-items-container {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.08) 0%, rgba(255, 0, 255, 0.08) 100%) !important;
+    border: 1.5px solid rgba(0, 212, 255, 0.3) !important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(0, 212, 255, 0.1) !important;
+}
+
+.cs-items-container:hover {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(255, 0, 255, 0.2) 100%) !important;
+    border: 1.5px solid rgba(0, 212, 255, 0.6) !important;
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.8), 0 0 35px rgba(255, 0, 255, 0.4) !important;
+    transform: translateY(-5px) !important;
+}
+
+/* Item image background */
+.cs-items-image {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.08) 0%, rgba(255, 0, 255, 0.08) 100%) !important;
+    border: 1px solid rgba(0, 212, 255, 0.3) !important;
+}
+
+/* Purchase button - Vibrant gradient */
+.cs-items-purchase-container span {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.4) 0%, rgba(255, 0, 255, 0.4) 100%) !important;
+    border: 1.5px solid rgba(0, 212, 255, 0.7) !important;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.6), 0 0 25px rgba(255, 0, 255, 0.3) !important;
+    transition: all 0.3s ease !important;
+}
+
+.cs-items-purchase-container:hover span {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.7) 0%, rgba(255, 0, 255, 0.7) 100%) !important;
+    box-shadow: 0 0 25px rgba(0, 212, 255, 1), 0 0 40px rgba(255, 0, 255, 0.6) !important;
+    transform: scale(1.05) !important;
+}
+
+/* Shine animation - More visible */
+@keyframes shine {
+    0% { 
+        background-position: -200% center; 
+    }
+    100% { 
+        background-position: 200% center; 
+    }
+}
+
+/* All text should be visible */
+.rubik-text, span {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Item labels - ensure visibility */
+.cs-items-footer span {
+    color: #ffffff !important;
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.6), 0 2px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Custom Links Container (Discord & Store) */
+.custom-links-container {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.custom-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 15px;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(255, 0, 255, 0.2) 100%) !important;
+    border: 1.5px solid rgba(0, 212, 255, 0.4) !important;
+    border-radius: 8px;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+.custom-link:hover {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.4) 0%, rgba(255, 0, 255, 0.4) 100%) !important;
+    border: 1.5px solid rgba(0, 212, 255, 0.8) !important;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.8), 0 0 30px rgba(255, 0, 255, 0.4) !important;
+    transform: translateY(-2px);
+}
+
+.custom-link svg {
+    width: 20px;
+    height: 20px;
+    color: #00d4ff;
+    filter: drop-shadow(0 0 5px rgba(0, 212, 255, 0.6));
+}
+
+.custom-link:hover svg {
+    color: #ff00ff;
+    filter: drop-shadow(0 0 8px rgba(255, 0, 255, 0.8));
+}
+
+.discord-link svg {
+    color: #5865F2;
+}
+
+.discord-link:hover svg {
+    color: #00d4ff;
+}
+
+.store-link svg {
+    color: #00d4ff;
+}
+
+.store-link:hover svg {
+    color: #ff00ff;
+}
+
+/* Logo styling */
+.cs-header-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
